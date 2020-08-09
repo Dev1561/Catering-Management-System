@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <title> Menu </title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <a style="padding:12px;" href="cust_homepage.html"> Home </a>
+        <a style="padding:12px;" href="about.html"> About </a>
+        <a style="padding:12px;" href="services.html"> Services </a>
+        <a style="padding:12px;" href="contact.html"> Contact Us </a>
+    </header>
+
+    <div>
+        <h1> Special Menu </h1>
+        <hr> <br/>
+    </div>
+
+    <div class="searchbar">
+        <input type="text" placeholder="Search for items..." id="search" onkeyup="filterItems()">
+    </div>
+    <div style="display: flex; clear: both;">
+        <div style="float:left; width:10%; padding:10px; height:100px;">
+            <button class="btn active" onclick="filterSelection('all')"> Show all </button>
+            <button class="btn" onclick="filterSelection('drinks')"> Drinks </button>
+            <button class="btn" onclick="filterSelection('lunch')"> Lunch </button>
+            <button class="btn" onclick="filterSelection('dinner')"> Dinner     </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column drinks">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-01.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Mojito </h4>
+                        <p> Contains mint, lemon etc..</p>
+                        <h5> $.50.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column drinks">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-02.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Blue Lagoon </h4>
+                        <p> Contains lemon, soft drinks etc...</p>
+                        <h5> $ 65.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column drinks">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-03.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Pina Colada </h4>
+                        <p> Contains coke, lemon etc...</p>
+                        <h5> $ 55.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column lunch">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-04.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Gujarati Lunch </h4>
+                        <p> Typical Gujarati fixed lunch. </p>
+                        <h5> $ 200.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column lunch">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-05.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Punjabi Lunch </h4>
+                        <p> Typical Punjabi fixed dinner. </p>
+                        <h5>$ 250.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column lunch">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-06.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Customize Lunch </h4>
+                        <p> Select your own choice </p>
+                        <h5> Price depends on items selected. </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column dinner">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-07.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Punjabi Dinner </h4>
+                        <p> Typical punjabi fixed dinner </p>
+                        <h5> $ 300.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column dinner">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-08.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> South Indian Dinner </h4>
+                        <p> Typical south indian dinner </p>
+                        <h5> $ 250.00 </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column dinner">
+            <div class="content">
+                <ul>
+                    <img class="img" src="images/img-09.jpg" alt="image" height="100px" width="100px">
+                    <li>
+                        <h4> Customize Dinner </h4>
+                        <p> Select your own choice. </p>
+                        <h5> Price depends on items selected. </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

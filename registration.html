@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title> Registration Form </title>
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+</head>
+
+<body>
+
+    <div id="data" style="margin: 0px; color: white;">
+        <p id="temp"></p>
+    </div>
+
+    <div class="container">
+        <form action="#">
+            <h1> Registration Form </h1>
+            <p> Fill up the form to create an account </p>
+            <hr> <br/>
+
+            <label for="username"> User Name : </label>
+            <input type="text" id="uname" placeholder="Enter your name" required>
+
+            <label for="password"> Password : </label>
+            <input type="password" id="passwd" placeholder="Enter password" required>
+
+            <label for="password"> Confirm Password : </label>
+            <input type="password" id="cnfpasswd" placeholder="Re-enter password" required>
+
+            <label for="phno">Phone Number :  </label>
+            <input type="text" id="phno" placeholder="Mobile number">
+
+            <label for="email"> Email :  </label>
+            <input type="email" id="emailid" placeholder="Enter your email">
+
+            <label for="city">  City :  </label>
+            <input type="text" id="city" placeholder="Enter City">
+
+            <label for="city">  State :  </label>
+            <input type="text" id="state" placeholder="Enter State">
+
+            <label for="address"> Address :  </label> <br/>
+            <textarea cols="60" rows="5" id="address"> </textarea>
+
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <input id="btn" type="submit" value="Register" name="btn">
+
+            <center>
+                <p> Already have an account? <a href="#">Sign in</a> . </p>
+            </center>
+
+            <script src="js/index.js"></script>
+    </div>
+    </form>
+</body>
+
+</html>
