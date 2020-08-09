@@ -1,0 +1,56 @@
+.content {
+    background-color: gray;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.data {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 15px;
+    background: darkblue;
+    color: white;
+    max-width: 500px;
+    text-align: center;
+}
+
+.ip-field {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    align-self: center;
+}
+
+.btn {
+    margin: 0 auto;
+    align-self: center;
+    background: darkblue;
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.link {
+    display: inline-block;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.fb {
+    padding: 5px;
+    display: inline-block;
+    background-color: #55ACEE;
+    color: white;
+}
+
+.google {
+    float: right;
+    padding: 5px;
+    display: inline-block;
+    background-color: #DD4B39;
+    color: white;
+}
