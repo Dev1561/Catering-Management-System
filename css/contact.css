@@ -1,22 +1,14 @@
-* {
-    box-sizing: border-box;
-}
-
-.main {
-    background-color: gray;
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
-    max-width: 700px;
+    max-width: 100px;
     margin: 0 auto;
     color: black;
-}
-
-a {
-    width: 100%;
-    color: darkblue;
-    text-decoration: none !important;
-    outline: none !important;
+    background-color: bisque;
 }
 
 input[type=text],

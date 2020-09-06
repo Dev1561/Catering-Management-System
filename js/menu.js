@@ -45,6 +45,7 @@ function filterItems() {
         h4 = li[i].getElementsByTagName("h4")[0];
         textvalue = h4.textContent || h4.innerHTML;
         if (textvalue.toUpperCase().indexOf(filter) > -1) {
+            document.getElementsByClassName("img")[i].style.display = "flex";
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";

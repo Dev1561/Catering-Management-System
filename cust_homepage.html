@@ -3,17 +3,21 @@
 <head>
     <title> Welcome to Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/homepage.js"></script>
 </head>
 
-<body>
+<body style="background-image: url(images/img-03.jpg);">
     <div class="container">
         <header>
-            <a style="padding:12px;" href="cust_homepage.html"> Home </a>
-            <a style="padding:12px; " href="about.html"> About </a>
-            <a style="padding: 12px; " href="menu.html"> Menu </a>
-            <a style="padding:12px; " href="services.html"> Services </a>
-            <a style="padding:12px;" href="contact.html"> Contact Us </a>
+            <nav class="nav nav-pills">
+                <a class="nav-link" href="cust_homepage.html"> Home </a>
+                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="menu.html"> Menu </a>
+                <a class="nav-link" href="services.html"> Services </a>
+                <a class="nav-link" href="contact.html"> Contact Us </a>
+            </nav>
         </header> <br/>
 
         <div class="book">
@@ -36,8 +40,6 @@
 
                 <input type="submit" class="btn" value="Order Now">
             </form>
-
-            <p id="data"> </p>
         </div>
     </div>
 </body>

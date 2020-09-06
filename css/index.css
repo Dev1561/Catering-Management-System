@@ -1,3 +1,17 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+#card {
+    width: 25rem;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
 .content {
     background-color: gray;
     max-width: 600px;
@@ -12,9 +26,9 @@
 
 .icon {
     padding: 15px;
-    background: darkblue;
+    background: blue;
     color: white;
-    max-width: 500px;
+    max-width: 200px;
     text-align: center;
 }
 
@@ -26,23 +40,23 @@
 }
 
 .btn {
+    padding-left: 20px;
     margin: 0 auto;
     align-self: center;
     background: darkblue;
-    color: white;
     padding: 15px;
     margin-bottom: 15px;
 }
 
 .link {
-    display: inline-block;
     width: 75%;
     margin-bottom: 20px;
 }
 
 .fb {
+    float: left;
     padding: 5px;
-    display: inline-block;
+    /*display: inline-block;  */
     background-color: #55ACEE;
     color: white;
 }
@@ -50,7 +64,7 @@
 .google {
     float: right;
     padding: 5px;
-    display: inline-block;
+    /*display: inline-block;  */
     background-color: #DD4B39;
     color: white;
 }

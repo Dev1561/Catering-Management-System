@@ -1,17 +1,25 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .container {
-    background-color: gray;
+    background-color: bisque;
+    max-width: 650px;
 }
 
 .book {
-    max-width: 700px;
     margin: 0 auto;
 }
 
-a {
+
+/* a {
+    padding: 12px;
     color: darkblue;
     text-decoration: none !important;
     outline: none !important;
-}
+} */
 
 input[type=text],
 input[type=email],
