@@ -19,7 +19,7 @@ body {
     color: darkblue;
     text-decoration: none !important;
     outline: none !important;
-} */
+} 
 
 input[type=text],
 input[type=email],
@@ -42,4 +42,13 @@ input[type=date] {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+}
+
+.column {
+    max-width: 650px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 150px;
+    color: black;
 }

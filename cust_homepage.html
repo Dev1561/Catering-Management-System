@@ -1,47 +1,460 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title> Welcome to Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/homepage.js"></script>
+    <meta charset="utf-8">
+
+    <title>Catering Management System </title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
-<body style="background-image: url(images/img-03.jpg);">
-    <div class="container">
-        <header>
-            <nav class="nav nav-pills">
-                <a class="nav-link" href="cust_homepage.html"> Home </a>
-                <a class="nav-link" href="about.html"> About </a>
-                <a class="nav-link" href="menu.html"> Menu </a>
-                <a class="nav-link" href="services.html"> Services </a>
-                <a class="nav-link" href="contact.html"> Contact Us </a>
-            </nav>
-        </header> <br/>
+<body style="background-color:lavenderblush">
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" style="height: 100px; width: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+                <div class="collapse navbar-collapse" id="navbars-rs-food">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <div class="book">
-            <form action="confirm.html">
-                <h1> Book Our Services </h1>
-                <hr> <br/>
-
-                <label for="username"> UserName: </label>
-                <input type="text" name="uname" placeholder="Enter your name" required>
-
-                <label for="email"> Email : </label>
-                <input type="email" name="email" placeholder="Enter email" required>
-
-                <label for="date"> Date : </label>
-                <input type="date" name="date" required>
-
-                <label for="phno"> Mobile Number : </label>
-                <input type="number" name="mno" placeholder="Enter Mobile Number" required>
-                <hr> <br/>
-
-                <input type="submit" class="btn" value="Order Now">
-            </form>
+    <div class="about-section-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                    <div class="inner-column">
+                        <h1>Welcome To <span> Our Website </span></h1>
+                        <h4>Little Story</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus
+                            erat et sem. </p>
+                        <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+                        <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="images/about-img.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="qt-box qt-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <p class="lead ">
+                        " If you're not the one cooking, stay out of the way and compliment the chef. "
+                    </p>
+                    <span class="lead">Michael Strahan</span>
+                </div>
+            </div>
+        </div>
+    </div> <br/>
+
+    <div class="menu-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading-title text-center">
+                        <h1>Special Menu</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row inner-menu-box">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Lunch</</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
+                    </div>
+                </div>
+
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-01.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Mojito </h4>
+                                            <p> Contains mint, lemon etc... </p>
+                                            <h5> $50.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-02.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4>Blue Lagoon</h4>
+                                            <p> Contains lemon, soft drinks etc.. </p>
+                                            <h5> $65.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-03.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Pina Colada </h4>
+                                            <p> Contains coke, lemon etc... </p>
+                                            <h5> $55.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-04.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Gujarati Lunch </h4>
+                                            <p> Typical Gujarati Fixed lunch </p>
+                                            <h5> $200.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-05.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Punjabi Lunch </h4>
+                                            <p> Typical Punjabi Fixed lunch </p>
+                                            <h5> $250.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-06.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Customize Lunch </h4>
+                                            <p> Select your own choice </p>
+                                            <h5> $200 - $1000 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-07.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Punjabi Dinner </h4>
+                                            <p> Typical Punjabi fixed dinner </p>
+                                            <h5> $300.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-08.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> South Indian Dinner </h4>
+                                            <p> Typical south indian dinner </p>
+                                            <h5> $250.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-09.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Customize Dinner </h4>
+                                            <p> Select your own choice </p>
+                                            <h5> $300 - $1500 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-01.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Mojito </h4>
+                                            <p> Contains mint, lemon etc... </p>
+                                            <h5> $50.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-02.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Blue Lagoon </h4>
+                                            <p> Contains mint, soft drinks etc... </p>
+                                            <h5> $65.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid drinks">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-03.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Pina Colada </h4>
+                                            <p> Contains coke, lemon etc... </p>
+                                            <h5> $55.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-04.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Gujarati Lunch </h4>
+                                            <p> Typical Gujarati Fixed lunch </p>
+                                            <h5> $200.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-05.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Punjabi Lunch </h4>
+                                            <p> Typical Punjabi Fixed lunch </p>
+                                            <h5> $250.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid lunch">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-06.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Customize Lunch </h4>
+                                            <p> Select your own choice </p>
+                                            <h5> $200 - $1000 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-07.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Punjabi Dinner </h4>
+                                            <p> Typical Punjabi fixed dinner </p>
+                                            <h5> $300.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-08.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> South Indian Dinner </h4>
+                                            <p> Typical Punjabi fixed dinner </p>
+                                            <h5> $250.00 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 special-grid dinner">
+                                    <div class="gallery-single fix">
+                                        <img src="images/img-09.jpg" class="img-fluid" alt="Image">
+                                        <div class="why-text">
+                                            <h4> Customize Dinner </h4>
+                                            <p> Select your own choice </p>
+                                            <h5> $300 - $1500 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="gallery-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading-title text-center">
+                        <h2>Gallery</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <a class="lightbox" href="images/gallery-img-01.jpg">
+                            <img class="img-fluid" src="images/gallery-img-01.jpg" alt="Gallery Images">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <a class="lightbox" href="images/gallery-img-02.jpg">
+                            <img class="img-fluid" src="images/gallery-img-02.jpg" alt="Gallery Images">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <a class="lightbox" href="images/gallery-img-03.jpg">
+                            <img class="img-fluid" src="images/gallery-img-03.jpg" alt="Gallery Images">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <a class="lightbox" href="images/gallery-img-04.jpg">
+                            <img class="img-fluid" src="images/gallery-img-04.jpg" alt="Gallery Images">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <a class="lightbox" href="images/gallery-img-05.jpg">
+                            <img class="img-fluid" src="images/gallery-img-05.jpg" alt="Gallery Images">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <a class="lightbox" href="images/gallery-img-06.jpg">
+                            <img class="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer-reviews-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading-title text-center">
+                        <h2>Customer Reviews</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-imfo-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 arrow-right">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <div class="overflow-hidden">
+                        <h4>Phone</h4>
+                        <p class="lead">
+                            +01 123-456-4590
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 arrow-right">
+                    <i class="fa fa-envelope"></i>
+                    <div class="overflow-hidden">
+                        <h4>Email</h4>
+                        <p class="lead">
+                            yourmail@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="overflow-hidden">
+                        <h4>Location</h4>
+                        <p class="lead">
+                            800, Lorem Street, US
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-area bg-f">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3>About Us</h3>
+                    <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Subscribe</h3>
+                    <div class="subscribe_form">
+                        <form class="subscribe_form">
+                            <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                            <button type="submit" class="submit">SUBSCRIBE</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contact information</h3>
+                    <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+                    <p class="lead"><a href="#">+01 2000 800 9999</a></p>
+                    <p><a href="#"> info@admin.com</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Opening hours</h3>
+                    <p><span class="text-color">Mon-Tue-Wed :</span> 9:Am - 10PM</p>
+                    <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+                    <p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="company-name">All Rights Reserved. &copy; 2018 Design By :
+                            <a href="https://html.design/">html design</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
